@@ -1,6 +1,8 @@
 package pri.xyf.dataStructure;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Dale
@@ -104,7 +106,6 @@ public class SequenceList<T> {
 		{
 			throw new IndexOutOfBoundsException("线性表索引越界");
 		}
-		
 		ensureCapacity(size+1);
 		
 		//将指定索引处之后的所有元素向后移动一格
@@ -197,6 +198,8 @@ public class SequenceList<T> {
  		size = 0;
  	}
  	
+ 	
+ 	
  	public String toString()
  	{
  		if(size == 0)
@@ -223,7 +226,7 @@ public class SequenceList<T> {
 		list.add("cccc");
 		
 		//在索引1处插入一个新元素
-		list.insert("dddd",1);
+		list.insert("dddd", 1);
 		//输出线性表的元素
 		System.out.println(list);
 		//删除索引处为2处的元素
